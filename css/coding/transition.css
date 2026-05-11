@@ -1,0 +1,48 @@
+
+
+    <style>
+
+        body{
+            text-align: center;
+            font-family: Arial;
+            background-color: #f2f2f2;
+            margin-top: 100px;
+        }
+
+        .box{
+            width: 150px;
+            height: 150px;
+            background-color: dodgerblue;
+            margin: auto;
+            border-radius: 10px;
+
+            /* Animation */
+            animation: moveBox 3s infinite alternate;
+        }
+
+        @keyframes moveBox{
+            0%{
+                transform: translateX(0);
+                background-color: dodgerblue;
+            }
+
+            50%{
+                background-color: orange;
+            }
+
+            100%{
+                transform: translateX(200px);
+                background-color: crimson;
+            }
+        }
+
+    </style>
+</head>
+<body>
+
+    <h1>CSS Animation Example</h1>
+
+    <div class="box"></div>
+
+</body>
+</html>
